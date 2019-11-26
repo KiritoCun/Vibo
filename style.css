@@ -1,0 +1,925 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(fonts/myriadpro-light.otf);
+}
+@font-face {
+  font-family: "Myriad Pro";
+  font-weight: bold;
+  src: url(fonts/myriadpro-bold.otf);
+}
+@font-face {
+  font-family: "WorkSans Bold";
+  font-weight: bold;
+  src: url(fonts/WorkSans-Bold.otf);
+}
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1150px;
+	margin: 0px auto;
+}
+
+.container h2 {
+	color: #233148;
+	font-size: 30px;
+	line-height: 60px;
+	font-family: "Myriad Pro", sans-serif;
+}
+
+#hero {
+	height: 1000px;
+	padding-top: 48px;
+	background-color: #0fd5ef;
+	background-image: url(images/wave.png), url(images/smartphone.png), url(images/bg.png);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 100%, auto, cover;
+	background-position: center bottom, center bottom -88px, center bottom;
+}
+header {
+	height: 40px;
+	line-height: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+header img {
+	display: inline-block;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	font-size: 16px;
+	color: white;
+	padding: 0px 30px;
+	font-family: "Myriad Pro", sans-serif;
+	font-weight: bold;
+}
+header ul li a:last-child {
+	padding-right: 0px;
+}
+#hero h1 {
+	width: 575px;
+	text-align: center;
+	font-size: 45px;
+	line-height: 60px;
+	font-weight: bold;
+	font-family: "WorkSans Bold", sans-serif;
+	color: white;
+    margin: 134px auto 0px auto;
+}
+#hero h2 {
+	width: 575px;
+	text-align: center;
+	font-size: 15px;
+	line-height: 27px;
+	font-family: "Myriad Pro", sans-serif;
+	color: white;
+    margin: 0px auto;
+    margin-top: 15px;
+    font-weight: normal;
+}
+#hero #actions a {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	padding: 0px 32px;
+	font-size: 14px;
+	font-family: "WorkSans Bold", sans-serif;
+	color: #233148;
+	margin-left: 13px;
+	margin-right: 13px;
+}
+#hero #actions {
+	text-align: center;
+	margin-top: 41px;
+}
+#hero #actions a:first-child {
+	background-color: white;
+}
+#hero #actions a:nth-child(2){
+	border: 1px solid white;
+	color: white;
+}
+
+/** features **/
+
+#features {
+	background-color: #fafafc;
+	height: 1095px;
+}
+#features .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#features #phone-image > img {
+	margin-top: 290px;
+	margin-left: 110px;
+}
+
+#feature-list {
+	position: relative;
+}
+#feature-list div {
+	position: absolute;
+	background-color: white;
+	width: 270px;
+	height: 320px;
+	border-radius: 5px;
+	box-shadow: 0px 6px 9px rgba(35, 39, 47, 0.1);
+	margin-bottom: 20px;
+	padding: 60px 30px 34px 30px;
+}
+#feature-list div:nth-child(1){
+	right: 370px;
+	top: 117px;
+}
+#feature-list div:nth-child(2){
+	right: 38px;
+	top: 213px;
+}
+#feature-list div:nth-child(3){
+	right: 437px;
+	top: 511px;
+}
+#feature-list div:nth-child(4){
+	right: 87px;
+	top: 635px;
+}
+
+#feature-list div img {
+    margin: 0px auto;
+    display: block;
+}
+#feature-list div h3 {
+	text-align: center;
+	font-size: 14px;
+	line-height: 27px;
+	color: #233148;
+	margin-top: 29px;
+	margin-bottom: 16px;
+}
+#feature-list div p {
+	text-align: center;
+	font-size: 14px;
+	line-height: 27px;
+	color: #6a6d89;
+}
+
+/** stable **/
+#stable {
+	padding-top: 83px;
+	padding-bottom: 103px;
+	display: flex;
+	justify-content: space-between;
+	height: 625px;
+}
+
+#stable > div {
+	width: 470px;
+}
+#stable > ul {
+	width: 570px;
+}
+#stable > div > h2 {
+	margin-top: 48px;
+	text-align: right;
+}
+#stable > div > p {
+	font-size: 14px;
+	line-height: 27px;
+	color: #6a6d89;
+	text-align: right;
+	margin-top: 31px;
+	margin-bottom: 53px;
+	font-family: "Myriad Pro", sans-serif;
+}
+#stable > div > div {
+	text-align: right;
+}
+#stable > div > div > a {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	background-color: #33d2fd;
+	padding: 0px 44px;
+	border-radius: 5px;
+	font-size: 15px;
+	font-family: "WorkSans Bold", sans-serif;
+}
+
+#stable ul li p {
+	display: none;
+	padding-left: 80px;
+	padding-right: 10px;
+	font-size: 14px;
+	line-height: 27px;
+	color: white;
+	font-family: "WorkSans Bold", sans-serif;
+}
+
+#stable li {
+	margin-bottom: 20px;
+	box-shadow: 0px 6px 9px rgba(35, 39, 47, 0.1);
+	border-radius: 4px;
+}
+#stable li a {
+	line-height: 75px;
+	padding-left: 80px;
+	font-size: 15px;
+	color: #233148;
+	font-family: "WorkSans Bold", sans-serif;
+	background-repeat: no-repeat;
+    display: inline-block;
+    height: 75px;
+    width: 100%;
+    background-position: 26px center;
+}
+#stable li:nth-child(1) a {
+	background-image: url(images/heart.png);
+}
+#stable li:nth-child(2) a {
+	background-position: 34px center;
+	background-image: url(images/tag.png);
+}
+#stable li:nth-child(3) a {
+	background-image: url(images/brifcase.png);
+}
+#stable li:nth-child(4) a {
+	background-image: url(images/pencil.png);
+}
+
+#stable li:hover {
+	background-color: #33d2fd;
+	padding-bottom: 26px;
+}
+#stable li:hover p {
+	display: block;
+}
+/**everything**/
+#everything {
+
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 51px;
+}
+#imgcode {
+	margin-top:54px;
+}
+#every {
+	margin-top:76px;
+	width: 500px;
+}
+#every>h2 {
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	color: #233148;
+	font-family: "Myriad Pro", sans-serif;
+	font-weight: normal;
+	padding-left: 54px;
+	margin-bottom: 20px;
+}
+#every ul {
+	margin-bottom: 19px;
+}
+#every ul li {
+	padding-bottom: 18px;
+}
+#every ul li a {
+	display: inline-block;
+	background-image: url(images/check.png);
+	background-repeat:no-repeat;
+	background-position: 27px center;
+	height: 27px;
+	line-height: 27px;
+	font-size: 15px;
+	color:#233148;
+	font-family:"Myriad Pro",san-serif;
+	font-weight: bold;
+	padding-left: 64px;
+}
+#everything div p {
+	font-family: "Myriad Pro",sans-serif;
+	font-size:14px;
+	line-height: 27px;
+	color:#6a6d89;
+	padding-left: 29px;
+	padding-right: 15px;
+	text-align: left;
+}
+/**availble**/
+#availble {
+	height: 764px;
+	position: relative;
+	background-image: url(images/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #0cc6f1;
+	
+}
+#availble div.container {
+	display: flex;
+	justify-content: space-between;
+}
+#availble div.container>img {
+	padding-left: 180px;
+	padding-top:112px;
+}
+#getapp {
+ 	width: 470px;
+ 	height: 290px;	
+ 	margin-top:260px;
+	margin-right: 110px;
+}
+#getapp p {
+	font-family: "Myriad Pro",sans-serif;
+	font-size: 14px;
+	line-height: 27px;
+	color:white;
+}
+#getapp ul {
+	display: flex;
+	justify-content: space-between;
+	width: 367px;
+	height: 49px;
+	margin-top: 60px;
+}
+#getapp >ul >li {
+	display: inline-block;
+	height: 100%;
+}
+
+#get {
+	
+	background-color: transparent;
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	bottom:-27px;
+	text-align: center;
+}
+#get>a {
+	display: inline-block;
+	color:white;
+	text-align: center;
+	font-size: 20px;
+	line-height: 60px;
+	font-family: "Myriad Pro",sans-serif;
+	font-weight: bold;
+	padding:0px 100px;
+    background-image: linear-gradient(#fe707b, #f6387d);
+    box-shadow: 0px 11px 29px rgba(255,7,95,0.2);
+    text-transform: uppercase;
+   
+}
+#links {
+	
+    display: flex;
+    justify-content: space-between;
+    padding:138px 199px 82px 199px;
+}
+#links >div  {
+	width: 170px;
+	
+}
+#links>div>ul>li>a {
+	display: inline-block;
+ color: #6a6d89;
+ padding-top:5px;
+}
+#links div h3 {
+	color: #233148;
+	font-size: 15px;
+	line-height: 27px;
+	margin-bottom: 12px;
+}
+#get-in-touch {
+	text-align: center;
+}
+#get-in-touch>h2 {
+	margin-bottom: 6px;
+}
+#get-in-touch>p {
+	font-size: 14px;
+	line-height: 27px;
+	color:#6a6d89;
+}
+#get-in-touch>form{
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	margin-top:65px;
+	margin-bottom: 87px;
+}
+#get-in-touch>form>input {
+	display: inline-block;
+	height: 100%;
+	width: 570px;
+	margin: 0px 15px;
+	padding-left: 19px;
+	outline: none;
+	text-align: center;
+}
+#get-in-touch>form>button {
+	display: inline-block;
+	background-color: #33d2fd;
+	border:1px solid #33d2fd;
+	height: 100%;
+	width: 170px;
+	font-size: 15px;
+	color:rgb(35,49,72);
+	font-family: "Myriad Pro",sans-serif;
+	margin: 0px 15px;
+	font-weight:bold;
+}
+
+footer  {
+	background-color: #233148;
+}
+#pr  {
+	height: 101px;
+	display: flex;
+	justify-content: space-between;
+}
+#pr>p {
+	font-size: 14px;
+	line-height: 101px;
+	color:white;
+}
+
+#pr ul li {
+	display: inline-block;
+	margin:35px 23px 0px 23px;
+	
+}
+#pr ul li:last-child {
+	margin-right: 0px;
+}
+/**RESPONSIVE**/
+@media screen and (max-width: 1200px) {
+header img {
+ 	margin-left: 10px;
+ 	}
+header ul li a:last-child {
+    padding-right: 10px;
+}
+#hero {
+    height: 900px;
+    background-size: 100%, 215px auto, cover;
+}
+#features #phone-image {
+
+}
+#features #phone-image > img {
+    margin-top: 250px;
+    margin-left: 50px;
+}
+#feature-list div {
+    width: 245px;
+    height: auto;
+ 
+}
+#feature-list div:nth-child(1) {
+    right: 319px;
+}
+#feature-list div:nth-child(3) {
+    right: 365px;
+    top: 500px;
+}
+#feature-list div:nth-child(4) {
+    right: 82px;
+    top: 605px;
+}
+#features .container {
+    padding-bottom: 280px;
+}
+#features {
+    height: auto;
+}
+#stable {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: auto;
+}
+#stable > div {
+    width: 48%;
+    padding-left: 10px;
+}
+#stable > ul {
+    width: 48%;
+    padding-top: 30px;
+    padding-right: 10px;
+}
+#availble div.container>img {
+    padding-left: 66px;
+}
+#links {
+    padding: 90px 130px 26px 199px;
+}
+#get-in-touch>form {
+    margin-top: 52px;
+    margin-bottom: 70px;
+}
+#pr {
+    height: 90px;
+}
+
+#pr>p {
+    line-height: 90px;
+    margin-left: 10px;
+}
+#pr ul li:last-child {
+    margin-right: 10px;
+}
+#pr ul li {
+    display: inline-block;
+    margin: 35px 25px 0px 25px;
+}
+/**width: 786 ->960 px**/
+@media screen and (max-width: 960px) {
+	header {
+    height: 74px;
+    line-height: 74px;
+}
+	header img {
+    display: inline-block;
+    width: 183px;
+    height: 74px;
+}
+header ul li a {
+    font-size: 20px;
+    padding: 0px 35px;
+    
+}
+#hero h1 {
+    font-size: 42px;
+    margin: 120px auto 0px auto;
+}
+#hero h2 {
+    font-size: 17px;
+}
+#hero #actions a {
+    font-size: 20px;
+}
+#feature-list {
+  
+     display: flex;
+     position: static;
+     padding-top: 60px;
+       
+}
+#feature-list  div {
+	position: static;
+	width: auto;
+	padding: 50px 10px 30px 10px;
+}
+#features #phone-image > img {
+    display: none;
+}
+#feature-list div:nth-child(1) {
+    margin-left: 10px;
+}
+#feature-list div:nth-child(4) {
+    margin-right: 10px;
+}
+#features .container {
+    padding-bottom: 60px;
+}
+#stable {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#everything {
+    display: block;
+}
+#imgcode {
+    margin-top: 40px;
+    text-align: center;
+}
+div#imgcode img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#every {
+    margin-top: 70px;
+    width: 700px;
+    margin: 70px auto;
+}
+#getapp {
+    margin-top: 260px;
+    margin-right: 50px;
+    width: 380px;
+}
+#links {
+    padding-top: 70px;
+    padding: 90px 80px 26px 120px;
+}
+#get-in-touch>form {
+    height: 45px;
+}
+#get-in-touch>form>input {
+    width: 410px;
+
+}
+#pr {
+    height: 80px;
+}
+#pr>p {
+    line-height: 80px;
+}
+#pr ul li {
+    margin: 28px 25px 0px 25px;
+}
+#pr ul li:last-child {
+    margin-right: 25px;
+}
+}
+/**width: 500 ->786 px**/
+@media screen and (max-width: 786px) {
+
+header {
+    height: auto;
+  flex-direction: column;
+}
+header img {
+    margin: 0px auto;
+}
+header ul {
+    display: flex;	
+    justify-content: space-around;
+}
+header ul li a {
+   display: inline-block;
+    padding: 0px;
+    
+}
+header ul li a:last-child {
+    padding-right: 0px;
+}
+#hero {
+    background-size: 100%, 215px auto, cover;
+}
+#hero h1 {
+    width: 460px;
+    font-size: 35px;
+    margin: 50px auto 0px auto;
+    line-height: 50px;    
+}
+#hero h2 {
+    width: 460px;
+    font-size: 18px;
+}
+#hero #actions {
+    display: block;
+}
+#hero #actions a {
+    width: 190px;
+    padding:0px;
+}
+
+#feature-list {
+	width: 100%;
+    flex-direction: column;
+}
+
+#feature-list div {
+    padding: 20px 10px 20px 10px;
+    margin: 10px ;
+
+}
+#feature-list div h3 {
+    font-size: 22px;
+    color: #233148;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#features .container {
+    padding-bottom: 50px;
+}
+#feature-list div img {
+    display: inline-block;
+    float:left;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+#feature-list div p {
+    text-align: left;
+}
+#stable {
+    display: block;  
+}
+#imgcode {
+    margin-top: 0px;
+}
+#availble {
+    height: auto;
+}
+#availble div.container>img {
+    display: none;
+}
+#stable > div {
+    width: 100%;
+    padding-right: 10px;
+}
+#stable > div > h2 {
+    text-align: center;
+}
+#stable > div > p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+#stable > div > div {
+    text-align: center;
+}
+#stable > ul {
+    padding: 10px;
+    width: 100%;
+}
+#stable li {
+    margin-bottom: 10px;
+}
+#every {
+    width: 100%;
+    margin: 20px auto;
+}
+#getapp {
+    margin-top: 100px;
+    margin: 100px 25px;
+    width: 100%;
+}
+.container h2 {
+    text-align: center;
+}
+#getapp ul {
+    justify-content: center;
+    width: 100%;
+}
+#getapp >ul >li {
+    margin: 0px 10px;
+}
+#links {
+    padding: 70px 0px 26px 50px;
+}
+#get-in-touch>h2 {
+    margin-bottom: -4px;
+}
+#get-in-touch>form>button {
+    width: 130px;
+    line-height: 27px;
+}
+#get-in-touch>form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#get-in-touch>form>input {
+    padding: 7px 0px 7px 19px;
+    width: 300px;
+}
+#pr ul li {
+    margin: 10px 10px 0px 10px;
+}
+#pr {
+    height: 48px;
+}
+#pr>p {
+    line-height: 48px;
+}
+}
+/**width: <500 **/
+@media screen and (max-width: 500px) {
+	header img {
+    width: 152px;
+    height: 61px;
+}
+	header ul li a {
+    font-size: 18px;
+}
+	#hero h1 {
+    width: 330px;
+    font-size: 24px;
+    margin: 35px auto 0px auto;
+    line-height: 40px;
+}
+#hero h2 {
+    width: 330px;
+    font-size: 14px;
+}
+#hero #actions {
+    margin-top: 30px;
+}
+#hero #actions a {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#hero {
+	height: 820px;
+    background-size: 100%, 200px auto, cover;
+}
+#feature-list div img {
+    width: 25px;
+}
+#feature-list div h3 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#feature-list {
+    padding-top: 10px;
+}
+#features .container {
+    padding-bottom: 10px;
+}
+#stable {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#stable li {
+    margin: 10px 0px 0px 0px;
+}
+#every>h2 {
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+#every ul li {
+    padding-bottom: 5px;
+}
+#every ul {
+    margin-bottom: 10px;
+}
+#everything {
+    padding-bottom: 20px;
+}
+#getapp {
+    margin: 50px 10px;
+    width: 100%;
+}
+#getapp ul li a img {
+	display: inline-block;
+	width: 130px;
+	height: 32px;
+}
+#get {
+    height: 50px; 
+}
+#get>a {
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0px 20px;    
+}
+#links {
+    padding: 50px 0px 25px 10px;
+    justify-content: space-around;
+}
+#links >div {
+    width: auto;
+}
+#links div h3 {
+    font-size: 12px;
+    line-height: 21px;
+}
+#links div li {
+    font-size: 12px;
+}
+.container h2 {
+    font-size: 27px;
+    line-height: 45px;
+}
+#get-in-touch>p {
+    font-size: 11px;
+    line-height: 21px;
+}
+#get-in-touch>form>button {
+  
+     height: 27px; 
+     margin-top: 10px;
+}
+#get-in-touch>form {
+    height: 27px;
+    margin-bottom: 47px;
+}
+#pr {
+	display: block;
+	height: 90px;
+	text-align: center;
+}
+#pr ul li {
+    margin: 0px 15px 0px 15px;
+}
+}
